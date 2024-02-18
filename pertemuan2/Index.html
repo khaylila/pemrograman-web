@@ -1,0 +1,218 @@
+<!-- <!DOCTYPE html> => menandakan bahwa yang digunakan adalah html versi 5 -->
+<!DOCTYPE html>
+
+<!-- <html> => digunakan untuk mendefinisikan bagian terluar yang berisi sekumpulan elemen html -->
+<html lang="en">
+  <!-- <head> => elemen yang digunakan untuk menyimpan metadata -->
+  <head>
+    <!-- <meta> => metadata pada file html -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- tag <title> => digunakan untuk mendefinisikan judul html -->
+    <title>Mobile and Web Programming</title>
+    <!-- tag <link> => digunakan untuk menghubungkan antara dokumen dengan sumber luar -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- tag <style> => digunakan untuk mendefinisikan css pada dokumen html -->
+    <style>
+      body {
+        font-family: "Plus Jakarta Sans", sans-serif;
+        color: rgba(46, 49, 55, 0.96);
+        margin-left: 10rem;
+        margin-right: 10rem;
+      }
+      .text-center {
+        text-align: center;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid rgba(75, 80, 90, 0.96);
+        border-collapse: collapse;
+      }
+      .bold {
+        font-weight: 600;
+      }
+      .w-100 {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <!-- tag <body> => digunakan untuk mendefinisikan body dokumen html -->
+  <body>
+    <!-- section => digunakan untuk mendefinisikan setiap bagian pada dokumen -->
+    <section id="main">
+      <!-- h1 (Heading satu) => digunakan untuk mendefinisikan judul1 pada html (semakin kecil angka semakin besar ukuran font) -->
+      <h1 class="text-center">Tugu Pahlawan, Bangunan Karya Anak Bangsa</h1>
+
+      <!-- tag <div> => digunakan sebagai tempat untuk menampung elemen elemen html, kemudian ditata atau dimanipulasi dengan css maupun js -->
+      <div style="display: flex; flex-wrap: nowrap">
+        <div style="width: 75%">
+          <!-- tag <img> => digunakan untuk menampilkan gambar pada halaman html -->
+          <img
+            src="tuguPahlawan.jpg"
+            alt="Gambar Tugu Pahlawan"
+            style="
+              height: 400px;
+              aspect-ratio: 16 9;
+              margin-left: auto;
+              margin-right: auto;
+              display: block;
+              border-radius: 10px;
+            "
+          />
+        </div>
+        <div style="width: 25%; display: flex; align-items: center">
+          <!-- tag <table> => digunakan untuk membuat tabel pada html -->
+          <table class="w-100">
+            <!-- tag <tr> => digunakan untuk membuat baris pada tabel html -->
+            <tr>
+              <!-- tag <td> => digunakan untuk membuat kolom pada tabel html -->
+              <td class="bold">Peringkat</td>
+              <td>Nasional</td>
+            </tr>
+            <tr>
+              <td class="bold">Kategori</td>
+              <td>Struktur</td>
+            </tr>
+            <tr>
+              <td class="bold">Tanggal SK</td>
+              <td>1996 & 2014</td>
+            </tr>
+            <tr>
+              <td class="bold">Lokasi</td>
+              <td>
+                <!-- tag <a> => digunakan untuk membuat hyperlink (mengarahkan menuju halaman lain) -->
+                <a href="https://id.wikipedia.org/wiki/Surabaya">Surabaya,</a>
+                <a href="https://id.wikipedia.org/wiki/Jawa_Timur"
+                  >Jawa Timur</a
+                >
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <!-- tag <article> => digunakan untuk  -->
+      <article>
+        <!-- h2 (Heading dua) => digunakan untuk mendefinisikan judul2 pada html (semakin kecil angka semakin besar ukuran font) -->
+        <h2>Deskripsi</h2>
+        <!-- tag <p> mendefinisikan sebuah paragraf -->
+        <p>
+          Tugu Pahlawan adalah sebuah monumen yang menjadi markah tanah Kota
+          Surabaya. Tinggi monumen ini adalah 41,15 meter dan berbentuk lingga
+          atau paku terbalik. Tubuh monumen berbentuk lengkungan-lengkungan
+          (canalures) sebanyak 10 lengkungan, dan terbagi atas 11 ruas. Tinggi,
+          ruas dan canalures mengandung makna tanggal 10, bulan 11, tahun 1945.
+          Suatu tanggal bersejarah, bukan hanya bagi penduduk Kota Surabaya,
+          tetapi juga bagi seluruh Rakyat Indonesia. Tugu Pahlawan dibangun
+          untuk memperingati peristiwa Pertempuran 10 November 1945 di Surabaya,
+          di mana arek-arek Suroboyo berjuang melawan pasukan Sekutu bersama
+          Belanda yang hendak menjajah kembali Indonesia. Monumen Tugu Pahlawan
+          menjadi pusat perhatian setiap tanggal 10 November mengenang peristiwa
+          pada tahun 1945 ketika banyak pahlawan yang gugur dalam perang
+          kemerdekaan.
+        </p>
+        <p>List Pahlawan Nasional:</p>
+        <!-- tag <ul> => digunakan untuk mendefinisikan unordered list (list tanpa nomor) -->
+        <ul>
+          <!-- tag <li> => digunakan untuk mendefinisikan sebuah list item -->
+          <li>Soekarno</li>
+          <li>Moh. Hatta</li>
+          <li>R.A. Kartini</li>
+          <li>Cut Nyak Dien</li>
+        </ul>
+        <p>List Pahlawan Revolusi:</p>
+        <!-- tag <ol> => digunakan untuk mendefinisikan ordered list (list dengan nomor) -->
+        <ol>
+          <li>Jenderal Ahmad Yani</li>
+          <li>Letjen Suprapto</li>
+          <li>Letjen S. Parman</li>
+          <li>Letjen M.T. Haryono</li>
+        </ol>
+      </article>
+
+      <!-- tag <blockquote> => mendefinisikan bagian yang diambil dari sumber lain -->
+      <blockquote style="text-align: right">
+        <p>Merdeka atau party!</p>
+        <footer>
+          <!-- tag <cite> => mendefinisikan judul atau karya kreatif -->
+          <cite title="Penemu Kuote">Khaylila</cite>
+        </footer>
+      </blockquote>
+
+      <article>
+        <h2>Lokasi</h2>
+        <p>
+          Monumen ini berada di tengah-tengah kota di Jalan Pahlawan Surabaya,
+          dan di dekat Kantor Gubernur Jawa Timur. Tugu Pahlawan merupakan salah
+          satu ikon Kota Surabaya sebagai Kota Pahlawan. Berdiri di atas tanah
+          lapang seluas 1,3 hektare, dan secara administratif berada di wilayah
+          Kelurahan Alun-Alun Contong, Kecamatan Bubutan, Kota Surabaya.
+        </p>
+      </article>
+    </section>
+    <section id="kritikSaran">
+      <h2>Kritik dan Saran</h2>
+      <div style="margin-left: auto; margin-right: auto; width: 50%">
+        <div>
+          <!-- tag <label> => digunakan untuk melabeli elemen input -->
+          <label class="bold" style="display: block" for="nama">Nama</label>
+          <!-- tag <input> => digunakan user untuk memasukkan data -->
+          <input
+            style="width: 100%; padding: 5px"
+            type="text"
+            name="nama"
+            id="nama"
+            placeholder="Milea"
+          />
+        </div>
+        <div style="margin-top: 1rem">
+          <label class="bold" style="display: block" for="komentar"
+            >Komentar</label
+          >
+          <!-- tag <textarea> => digunakan user untuk memasukkan data lebih dari satu baris -->
+          <textarea
+            style="width: 100%; padding: 5px; resize: none"
+            name="komentar"
+            id="komentar"
+            rows="4"
+            placeholder="Server Lag"
+          ></textarea>
+        </div>
+        <!-- tag <button> => digunakan untuk mendefinisikan button agar berinteraksi dengan pengguna -->
+        <button
+          style="
+            margin-top: 1rem;
+            padding: 10px;
+            color: white;
+            background-color: chocolate;
+            border-radius: 5px;
+          "
+          id="btnSubmit"
+        >
+          Submit
+        </button>
+      </div>
+    </section>
+    <!-- tag <footer> => digunakan untuk menandai footer pada dokumen -->
+    <footer style="margin-top: 2rem; text-align: center">
+      <!-- tag <small> => digunakan untuk mendefinisikan tulisan yang lebih kecil -->
+      <small
+        >Copyright &copy; 2024
+        <a href="https://github.com/khaylila">khaylila</a>. All Right
+        Reserved</small
+      >
+    </footer>
+    <!-- tag <script> => digunakan untuk menambahkan sebuah script javascript -->
+    <script>
+      const btnSubmit = document.getElementById("btnSubmit");
+      btnSubmit.addEventListener("click", function () {
+        alert("Berhasil submit data!");
+      });
+    </script>
+  </body>
+</html>
