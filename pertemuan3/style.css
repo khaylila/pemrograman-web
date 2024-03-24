@@ -1,0 +1,41 @@
+body {
+  background-color: rgb(190, 190, 190);
+}
+* {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
+h1 {
+  font-weight: 300;
+}
+p {
+  color: red;
+}
+.text-yellow {
+  color: yellow;
+}
+#third {
+  color: green;
+}
+#forth {
+  color: aqua;
+}
+.coba-gambar {
+  margin: 1rem;
+  height: 200px;
+  width: 200px;
+  background-color: grey;
+  background-image: url("../pertemuan2/07des.jpeg");
+  background-position: top;
+  background-size: cover;
+  margin-bottom: 2rem;
+}
+.coba-gambar2 {
+  margin: 1rem;
+  height: 200px;
+  width: 200px;
+  background-color: grey;
+  background-image: url("../pertemuan2/07des2.jpeg");
+  background-position: center;
+  background-size: contain;
+}
