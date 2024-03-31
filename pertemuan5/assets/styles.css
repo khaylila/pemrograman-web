@@ -1,0 +1,217 @@
+.bg-purple-600 {
+  background-color: rgb(147 51 234);
+}
+
+.bg-purple-400 {
+  background-color: rgb(192 132 252);
+}
+
+.jumbotron {
+  padding-top: 2rem;
+  background-color: rgb(243 232 255);
+}
+
+.btn-outline-purple {
+  background-color: #fff;
+  border: 1px solid rgb(168 85 247);
+}
+
+.btn-purple {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: rgb(126 34 206);
+  --bs-btn-border-color: rgb(126 34 206);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: rgb(107 33 168);
+  --bs-btn-hover-border-color: rgb(88 28 135);
+  --bs-btn-focus-shadow-rgb: 246, 122, 88;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: rgb(88 28 135);
+  --bs-btn-active-border-color: rgb(59 7 100);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: rgb(126 34 206);
+  --bs-btn-disabled-border-color: rgb(126 34 206);
+}
+
+.btn-xl {
+  padding: 1.25rem 2.25rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 10rem;
+}
+
+.btn-outline-purple:hover {
+  background-color: rgb(168 85 247);
+  color: #fff;
+}
+
+.fill-secondary {
+  fill: rgb(100 116 139);
+}
+
+.fill-secondary:hover {
+  fill: rgb(51 65 85);
+}
+
+.logo-size {
+  width: 1rem;
+}
+
+.pt-5 {
+  padding-top: 5rem !important;
+}
+header.masthead {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 4.5rem);
+  background: linear-gradient(
+      to bottom,
+      rgba(233, 213, 255, 0.5) 0%,
+      rgba(233, 213, 255, 0.5) 100%
+    ),
+    url("../img/bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+header.masthead h1,
+header.masthead .h1 {
+  font-size: 2.25rem;
+}
+@media (min-width: 992px) {
+  header.masthead {
+    height: 100vh;
+    min-height: 40rem;
+    padding-top: 4.5rem;
+    padding-bottom: 0;
+  }
+  header.masthead p {
+    font-size: 1.15rem;
+  }
+  header.masthead h1,
+  header.masthead .h1 {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1200px) {
+  header.masthead h1,
+  header.masthead .h1 {
+    font-size: 3.5rem;
+  }
+}
+
+hr.divider {
+  height: 0.2rem;
+  max-width: 3.25rem;
+  margin: 1.5rem auto;
+  background-color: rgb(192 132 252);
+  opacity: 1;
+}
+
+hr.divider-light {
+  background-color: #fff;
+}
+.page-section {
+  padding: 8rem 0;
+}
+
+.text-white-75 {
+  color: rgba(255, 255, 255, 0.75) !important;
+}
+
+.text-purple-700 {
+  color: rgb(126 34 206) !important;
+}
+#portfolio .container-fluid,
+#portfolio .container-sm,
+#portfolio .container-md,
+#portfolio .container-lg,
+#portfolio .container-xl,
+#portfolio .container-xxl {
+  max-width: 1920px;
+}
+#portfolio .container-fluid .portfolio-box,
+#portfolio .container-sm .portfolio-box,
+#portfolio .container-md .portfolio-box,
+#portfolio .container-lg .portfolio-box,
+#portfolio .container-xl .portfolio-box,
+#portfolio .container-xxl .portfolio-box {
+  position: relative;
+  display: block;
+}
+#portfolio .container-fluid .portfolio-box .portfolio-box-caption,
+#portfolio .container-sm .portfolio-box .portfolio-box-caption,
+#portfolio .container-md .portfolio-box .portfolio-box-caption,
+#portfolio .container-lg .portfolio-box .portfolio-box-caption,
+#portfolio .container-xl .portfolio-box .portfolio-box-caption,
+#portfolio .container-xxl .portfolio-box .portfolio-box-caption {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  opacity: 0;
+  color: #fff;
+  background: rgb(147 51 234);
+  transition: opacity 0.25s ease;
+  text-align: center;
+}
+#portfolio
+  .container-fluid
+  .portfolio-box
+  .portfolio-box-caption
+  .project-category,
+#portfolio
+  .container-sm
+  .portfolio-box
+  .portfolio-box-caption
+  .project-category,
+#portfolio
+  .container-md
+  .portfolio-box
+  .portfolio-box-caption
+  .project-category,
+#portfolio
+  .container-lg
+  .portfolio-box
+  .portfolio-box-caption
+  .project-category,
+#portfolio
+  .container-xl
+  .portfolio-box
+  .portfolio-box-caption
+  .project-category,
+#portfolio
+  .container-xxl
+  .portfolio-box
+  .portfolio-box-caption
+  .project-category {
+  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+#portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-name,
+#portfolio .container-sm .portfolio-box .portfolio-box-caption .project-name,
+#portfolio .container-md .portfolio-box .portfolio-box-caption .project-name,
+#portfolio .container-lg .portfolio-box .portfolio-box-caption .project-name,
+#portfolio .container-xl .portfolio-box .portfolio-box-caption .project-name,
+#portfolio .container-xxl .portfolio-box .portfolio-box-caption .project-name {
+  font-size: 1.2rem;
+}
+#portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption,
+#portfolio .container-sm .portfolio-box:hover .portfolio-box-caption,
+#portfolio .container-md .portfolio-box:hover .portfolio-box-caption,
+#portfolio .container-lg .portfolio-box:hover .portfolio-box-caption,
+#portfolio .container-xl .portfolio-box:hover .portfolio-box-caption,
+#portfolio .container-xxl .portfolio-box:hover .portfolio-box-caption {
+  opacity: 1;
+}
